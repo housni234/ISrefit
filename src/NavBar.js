@@ -14,29 +14,29 @@ import Row from 'react-bootstrap/Row';
 function NavBar() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
-            <Container >
+            <Container fluid >
                 <Image className="logo" src="holder.js/171x180" thumbnail />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Row >
+                    <Nav className="me-auto" >
+                        <Row className="row">
                             <Col md="auto">
-                                <Nav.Link href="#home">NOS CUISINES</Nav.Link>
+                                <Nav.Link href="#home" className="Navlink">NOS CUISINES</Nav.Link>
                             </Col>
                             <Col md="auto" >
-                                <Nav.Link href="#link">QUI SOMME-NOUS</Nav.Link>
+                                <Nav.Link href="#link" className="Navlink">QUI SOMME-NOUS</Nav.Link>
                             </Col>
                             <Col md="auto">
-                                <Nav.Link href="#link">CONTACTEZ NOUS</Nav.Link>
+                                <Nav.Link href="#link" className="Navlink">CONTACTEZ NOUS</Nav.Link>
                             </Col>
                             <Col md="auto">
-                                <Nav.Link href="#link">NOS CLIENTS</Nav.Link>
+                                <Nav.Link href="#link" className="Navlink">NOS CLIENTS</Nav.Link>
                             </Col>
-                            <Col>
-                                <Nav.Link href="#link">SHOWROOM</Nav.Link>
+                            <Col md="auto">
+                                <Nav.Link href="#link" className="Navlink">SHOWROOM</Nav.Link>
                             </Col>
-                            <Col>
-                                <Nav.Link href="#link">FAQs</Nav.Link>
+                            <Col md="auto">
+                                <Nav.Link href="#link" className="Navlink">FAQs</Nav.Link>
                             </Col>
                         </Row>
                     </Nav>

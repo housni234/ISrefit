@@ -10,10 +10,12 @@
 .Navlink:hover {
   text-decoration: underline 1.7px solid rgb(234, 179, 78);
   /* padding-bottom: 2px; */
-  /* border-bottom-style: 2px rgb(234, 179, 78) */
+  border-bottom-style: 2px rgb(234, 179, 78)
 }
 
-.row {
-  display: flex;
-  align-content: flex-end;
-}
+/* .row {
+  display: grid;
+
+  justify-items: space-evenly;
+
+} */

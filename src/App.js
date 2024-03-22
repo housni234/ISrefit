@@ -1,11 +1,14 @@
 import './App.css';
-import NavBar from './NavBar';
+import NavBar from './Components/NavBar';
+import CarouselFade from './Components/CarouselFade';
 
 
 function App() {
   return (
-    <NavBar />
-
+    <>
+      <NavBar />
+      <CarouselFade />
+    </>
   );
 }
 

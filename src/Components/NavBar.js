@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -15,10 +14,10 @@ function NavBar() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
-                <Image className="logo" src="holder.js/171x180" thumbnail />
+                <Image className="logo" src={require("/Users/admin/Desktop/is-refit/src/images/isRefit.jpeg")} />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto" >
+                    <Nav className="mx-auto mt-auto" >
                         <Row>
                             <Col md="auto">
                                 <Nav.Link href="#home" className="Navlink">NOS CUISINES</Nav.Link>
@@ -43,28 +42,6 @@ function NavBar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar >
-        // <Container fluid>
-        //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        //     <Image className="logo" src="holder.js/171x180" thumbnail />
-        //     <Navbar.Collapse id="basic-navbar-nav">
-        //         <Nav className="me-auto" >
-        //             <Row className="justify-content-md-center">
-        //                 <Col md="auto">
-        //                     1 of 3
-        //                 </Col>
-        //                 <Col md="auto">Var</Col>
-        //                 <Col md="auto">
-        //                     3 of 3
-        //                 </Col>
-        //                 <Col md="auto">1 of 3</Col>
-        //                 <Col md="auto">Vari</Col>
-        //                 <Col md="auto">
-        //                     3 of 3
-        //                 </Col>
-        //             </Row>
-        //         </Nav>
-        //     </Navbar.Collapse>
-        // </Container >
     );
 }
 

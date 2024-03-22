@@ -19,3 +19,8 @@
   justify-items: space-evenly;
 
 } */
+
+.carouselImage {
+  height: 400px;
+  width: 1300px;
+}

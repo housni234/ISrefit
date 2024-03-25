@@ -9,18 +9,17 @@
 
 .Navlink:hover {
   text-decoration: underline 1.7px solid rgb(234, 179, 78);
-  /* padding-bottom: 2px; */
   border-bottom-style: 2px rgb(234, 179, 78)
 }
 
-/* .row {
-  display: grid;
 
-  justify-items: space-evenly;
-
-} */
 
 .carouselImage {
-  height: 400px;
-  width: 1300px;
+  height: 420px;
+  width: 100%;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
 }

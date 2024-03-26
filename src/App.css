@@ -19,7 +19,6 @@
   width: 100%;
 }
 
-.form-title {
-  display: flex;
-  justify-content: center;
+.bar {
+  margin-top: 60px;
 }

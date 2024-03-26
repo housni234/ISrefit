@@ -16,7 +16,7 @@ function NavBar() {
             <Container fluid>
                 <Image className="logo" src={require("/Users/admin/Desktop/is-refit/src/images/isRefit.jpeg")} />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className="bar">
                     <Nav className="mx-auto mt-auto" >
                         <Row>
                             <Col md="auto">

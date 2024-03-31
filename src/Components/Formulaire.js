@@ -3,10 +3,21 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { useEffect, useState } from 'react';
 
 
 
 function Formulaire() {
+    const countries = [
+        { id: '1', name: 'USA' },
+        { id: '2', name: 'SPAIN' }
+    ]
+
+    const [country, SetCountry] = useState([])
+
+    useEffect(() => { SetCountry(countries) }, [])
+
+
     return (
         <div>
             <h2 className='d-flex justify-content-center p-4 mt-4'>Envoyez nous une demande de consultation</h2>
@@ -23,7 +34,17 @@ function Formulaire() {
                             <Form.Group as={Col} controlId="formGridState" >
                                 <Form.Select defaultValue="Choose...">
                                     <option>Pays</option>
-                                    <option>...</option>
+                                    {
+                                        country &&
+                                            country !== undefined ?
+                                            country.map((ctr, index) => {
+                                                return (
+                                                    <option key={index} value={ctr.id}>{ctr.name}</option>
+                                                )
+                                            })
+                                            : "No Country"
+
+                                    }
                                 </Form.Select>
                             </Form.Group></Col>
                         <Col className='p-0'>

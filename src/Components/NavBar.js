@@ -14,7 +14,7 @@ function NavBar() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
-                <Image className="logo" src={require("/Users/admin/Desktop/is-refit/src/images/isRefit.jpeg")} />
+                <Image className="logo" src={require("/Users/housni/Desktop/Projects/ISrefit/src/images/isRefit.jpeg")} />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="bar">
                     <Nav className="mx-auto mt-auto" >

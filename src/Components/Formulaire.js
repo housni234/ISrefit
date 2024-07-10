@@ -1,3 +1,4 @@
+import React from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
@@ -6,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import { useEffect, useState } from 'react';
 
 
-
+/// fetching countries and cities
 function Formulaire() {
 
     const [countries, setCountries] = useState([]);
@@ -47,7 +48,7 @@ function Formulaire() {
     return (
         <div>
             <h2 className='d-flex justify-content-center p-4 mt-4'>Envoyez nous une demande de consultation</h2>
-            <Form /*</div>action='mail.php' method='POST'*/>
+            <Form action='http://localhost/mail.php' method='POST'>
                 <Container>
                     <Row>
                         <Col>
@@ -56,7 +57,13 @@ function Formulaire() {
                         <Col className='p-0'>
                             <Form.Control placeholder="Prenom" name='Prenom' />
                         </Col>
-                        <Col className=''>
+                        <Col>
+                            <Form.Control placeholder="pays" name='Nom' />
+                        </Col>
+                        <Col className='p-0'>
+                            <Form.Control placeholder="vile" name='Prenom' />
+                        </Col>
+                        {/* <Col className=''>
                             <Form.Group as={Col} controlId="formGridState" >
                                 <Form.Select defaultValue="Choose..." onChange={(e) => setSelectedCountry(e.target.value)}>
                                     <option value="">Pays</option>
@@ -75,20 +82,24 @@ function Formulaire() {
                                     ))}
                                 </Form.Select>
                             </Form.Group>
-                        </Col>
+                        </Col> */}
                         <Col className=''>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Control type="email" placeholder="Email" name="Email" />
                                 <div id="passwordHelpBlock" className="form-text">Optionnel</div>
                             </Form.Group>
                         </Col>
-                        <Col className='p-0'>
+                        <Col>
+                            <Form.Control placeholder="Telephone" name='Nom' />
+                        </Col>
+                       
+                        {/* <Col className='p-0'>
                             <Form.Group as={Col} controlId="formGridState" >
                                 <Form.Select defaultValue="Choose...">
                                     <option>Telephone</option>
                                 </Form.Select>
                             </Form.Group>
-                        </Col>
+                        </Col> */}
 
                         <Col>
                             <Button variant="primary" type="submit" style={{ backgroundColor: "rgba(255, 188, 16, 1)", color: "black", border: "1px solid rgba(206, 206, 206, 1)" }}>

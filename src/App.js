@@ -1,7 +1,9 @@
+import React from "react";
 import './App.css';
 import NavBar from './Components/NavBar';
 import CarouselFade from './Components/CarouselFade';
 import Formulaire from "./Components/Formulaire"
+import NosCuisines from "./Components/NosCuisines";
 
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
       <NavBar />
       <CarouselFade />
       <Formulaire />
+      <NosCuisines />
     </>
   );
 }

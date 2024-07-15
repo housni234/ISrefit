@@ -4,64 +4,65 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 
 /// fetching countries and cities
 function Formulaire() {
 
-    const [countries, setCountries] = useState([]);
-    const [selectedCountry, setSelectedCountry] = useState('');
-    const [cities, setCities] = useState([]);
+    // const [countries, setCountries] = useState([]);
+    // const [selectedCountry, setSelectedCountry] = useState('');
+    // const [cities, setCities] = useState([]);
 
 
-    // fetch countries
-    useEffect(() => {
-        fetch("https://api.countrystatecity.in/v1/countries", {
-            method: "GET",
-            headers: {
-                'X-CSCAPI-KEY': 'UGVvWldnYmlhUU9tTnNJWjVxOTJCMkdqRmR1N3pyR0RjNElMUmowYw=='
-            },
-            redirect: 'follow'
-        })
-            .then(response => response.json())
-            .then(data => setCountries(data))
-            .catch(error => console.error('Error fetching countries:', error));
-    }, []);
+    // // fetch countries
+    // useEffect(() => {
+    //     fetch("https://api.countrystatecity.in/v1/countries", {
+    //         method: "GET",
+    //         headers: {
+    //             'X-CSCAPI-KEY': 'UGVvWldnYmlhUU9tTnNJWjVxOTJCMkdqRmR1N3pyR0RjNElMUmowYw=='
+    //         },
+    //         redirect: 'follow'
+    //     })
+    //         .then(response => response.json())
+    //         .then(data => setCountries(data))
+    //         .catch(error => console.error('Error fetching countries:', error));
+    // }, []);
 
-    // fetch cities when country is selected 
-    useEffect(() => {
-        if (selectedCountry) {
-            fetch(`https://api.countrystatecity.in/v1/countries/${selectedCountry}/cities`, {
-                method: "GET",
-                headers: {
-                    'X-CSCAPI-KEY': 'UGVvWldnYmlhUU9tTnNJWjVxOTJCMkdqRmR1N3pyR0RjNElMUmowYw=='
-                },
-                redirect: 'follow'
-            })
-                .then(response => response.json())
-                .then(data => setCities(data))
-                .catch(error => console.error('Error fetching cities:', error));
-        }
-    }, [selectedCountry]);
+    // // fetch cities when country is selected 
+    // useEffect(() => {
+    //     if (selectedCountry) {
+    //         fetch(`https://api.countrystatecity.in/v1/countries/${selectedCountry}/cities`, {
+    //             method: "GET",
+    //             headers: {
+    //                 'X-CSCAPI-KEY': 'UGVvWldnYmlhUU9tTnNJWjVxOTJCMkdqRmR1N3pyR0RjNElMUmowYw=='
+    //             },
+    //             redirect: 'follow'
+    //         })
+    //             .then(response => response.json())
+    //             .then(data => setCities(data))
+    //             .catch(error => console.error('Error fetching cities:', error));
+    //     }
+    // }, [selectedCountry]);
 
     return (
         <div>
             <h2 className='d-flex justify-content-center p-4 mt-4'>Envoyez nous une demande de consultation</h2>
+
             <Form action='http://localhost/mail.php' method='POST'>
-                <Container>
-                    <Row>
-                        <Col>
+                <Container fluid>
+                    <Row xs='1' md='2' lg='auto' className="justify-content-md-center">
+                        <Col className='pb-2'>
                             <Form.Control placeholder="Nom" name='Nom' />
                         </Col>
-                        <Col className='p-0'>
+                        <Col className='pb-2'>
                             <Form.Control placeholder="Prenom" name='Prenom' />
                         </Col>
-                        <Col>
-                            <Form.Control placeholder="pays" name='Nom' />
+                        <Col className='pb-2'>
+                            <Form.Control placeholder="Pays" name='Pays' />
                         </Col>
-                        <Col className='p-0'>
-                            <Form.Control placeholder="vile" name='Prenom' />
+                        <Col  className='pb-2'>
+                            <Form.Control placeholder="Vile" name='Vile' />
                         </Col>
                         {/* <Col className=''>
                             <Form.Group as={Col} controlId="formGridState" >
@@ -83,14 +84,14 @@ function Formulaire() {
                                 </Form.Select>
                             </Form.Group>
                         </Col> */}
-                        <Col className=''>
+                        <Col>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Email" name="Email" />
+                                <Form.Control type="Email" placeholder="Email" name="Email" />
                                 <div id="passwordHelpBlock" className="form-text">Optionnel</div>
                             </Form.Group>
                         </Col>
-                        <Col>
-                            <Form.Control placeholder="Telephone" name='Nom' />
+                        <Col className='pb-2'>
+                            <Form.Control placeholder="Telephone" name='Telephone' />
                         </Col>
                        
                         {/* <Col className='p-0'>
@@ -101,7 +102,7 @@ function Formulaire() {
                             </Form.Group>
                         </Col> */}
 
-                        <Col>
+                        <Col >
                             <Button variant="primary" type="submit" style={{ backgroundColor: "rgba(255, 188, 16, 1)", color: "black", border: "1px solid rgba(206, 206, 206, 1)" }}>
                                 Consulter
                             </Button>

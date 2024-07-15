@@ -12,17 +12,17 @@ return(
         </Col>
     </Row>
     <Row>
-        <Col xs={6} md={3}>
+        <Col>
           <Image src={require("../images/slide2.jpeg")} rounded />
         </Col>
-        <Row><Col xs={2} md={2} lg={2}><a href="../images/slide2.jpeg" >gamme 1</a></Col> </Row> 
-        <Col xs={6} md={3}>
+        {/* <Row><Col ><a href="../images/slide2.jpeg" >gamme 1</a></Col> </Row>  */}
+        <Col >
           <Image src={require("../images/slide2.jpeg")} rounded />
         </Col> 
-        <Col xs={6} md={3} >
+        <Col  >
           <Image src={require("../images/slide2.jpeg")} rounded />
         </Col>
-        <Col xs={6} md={3}>
+        <Col >
           <Image href="../images/slide2.jpeg" src={require("../images/slide2.jpeg")} rounded />
         </Col>
     </Row>

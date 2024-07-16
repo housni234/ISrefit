@@ -6,8 +6,8 @@ function NosCuisines() {
     return (
         <>
             <Container>
-                <Row className="justify-content-center">
-                    <Col lg="6">
+                <Row className="justify-content-center ">
+                    <Col className='text-center' lg="6">
                         <h1 className="NosCuisines-title" >NOS CUISINES</h1>
                     </Col>
                 </Row>

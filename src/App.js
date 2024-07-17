@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar';
 import CarouselFade from './Components/CarouselFade';
 import Formulaire from "./Components/Formulaire"
 import NosCuisines from "./Components/NosCuisines";
+import QuiSommes from "./Components/QuiSommes";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <CarouselFade />
       <Formulaire />
       <NosCuisines />
+      <QuiSommes />
     </>
   );
 }

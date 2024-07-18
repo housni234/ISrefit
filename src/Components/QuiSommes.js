@@ -10,10 +10,11 @@ function QuiSommes() {
                 </Col>
             </Row>
             <Row className="justify-content-center">
-                <Col lg='9' >
-                    <p> gekjh jh jhehiuh iu hiurg ireuyigerkuyger uyerg ureyg eruyg erouyger ouyerg erouygrg r uygr uryeug reuyg rekjgerkj u ygr kjreg jrhgrekjhgrhb
-                        jhbejhg jhje jh ej ejghjhj jg gejh gjhew kjhejhg ejkh jeggjeghjkhweg jhg kjehwg jjwehg kjhgwe jjehg kjewhg jhge jhgejhg ejgekjhgew jkhgejwgdghqwc
-                        g ejkh jeggjeghjkhweg jhg kjehwg jjwehg kjhgwe jjehg  </p>
+                <Col className="qui-sommes" lg='10' >
+                    <p className="p-3"> Founded in 2010 after combining years of experience in renovating and installing kitchens and Founded
+                        in 2010 after combining years of experience in renovating and installing kitchens and Founded in 2010 after c
+                        ombining years of experience in renovating and installing kitchens and Founded in 2010 after combining years of experience
+                        in renovating and installing kitchens and Founded in 2010 after renovating and installing kitchens and Founded in 2010 after</p>
                 </Col>
             </Row>
         </Container>

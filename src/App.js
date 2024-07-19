@@ -5,6 +5,7 @@ import CarouselFade from './Components/CarouselFade';
 import Formulaire from "./Components/Formulaire"
 import NosCuisines from "./Components/NosCuisines";
 import QuiSommes from "./Components/QuiSommes";
+import NosClients from "./Components/NosClients";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Formulaire />
       <NosCuisines />
       <QuiSommes />
+      <NosClients />
     </>
   );
 }

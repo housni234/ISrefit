@@ -50,6 +50,17 @@
 
 }
 
-.cards-row{
+.cards-row {
     background-color: rgb(237, 237, 237);
+}
+
+.stars {
+    height: 20px;
+    width: 130px;
+}
+
+.card-title {
+    font-style: italic;
+    color: rgb(124, 124, 124);
+    font-weight: 600;
 }

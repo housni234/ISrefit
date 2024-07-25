@@ -6,19 +6,23 @@ import Formulaire from "./Components/Formulaire"
 import NosCuisines from "./Components/NosCuisines";
 import QuiSommes from "./Components/QuiSommes";
 import NosClients from "./Components/NosClients";
+import Showroom from "./Components/Showroom";
+import Faq from "./Components/Faq";
 
 
 function App() {
-  return (
-    <>
-      <NavBar />
-      <CarouselFade />
-      <Formulaire />
-      <NosCuisines />
-      <QuiSommes />
-      <NosClients />
-    </>
-  );
+    return (
+        <>
+            <NavBar />
+            <CarouselFade />
+            <Formulaire />
+            <NosCuisines />
+            <QuiSommes />
+            <NosClients />
+            <Showroom />
+            <Faq />
+        </>
+    );
 }
 
 export default App;

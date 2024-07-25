@@ -16,7 +16,7 @@ function NosClients() {
     const intialVisibleCardsState = 3;
     const [visibleCards, setVisibleCards] = useState(intialVisibleCardsState);
 
-   
+
 
     const loadMore = () => {
         setVisibleCards((preVisibleCards) => preVisibleCards + 3);

@@ -8,6 +8,7 @@ import QuiSommes from "./Components/QuiSommes";
 import NosClients from "./Components/NosClients";
 import Showroom from "./Components/Showroom";
 import Faq from "./Components/Faq";
+import SocialMedia from "./Components/SocialMedia";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <NosClients />
             <Showroom />
             <Faq />
+            <SocialMedia />
         </>
     );
 }

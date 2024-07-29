@@ -5,7 +5,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 function NosCuisines() {
     return (
         <>
-            <Container>
+            <Container >
                 <Row className="justify-content-center ">
                     <Col className='text-center' lg="6">
                         <h1 className="titles" >NOS CUISINES</h1>

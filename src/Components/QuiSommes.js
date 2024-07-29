@@ -4,9 +4,9 @@ import { Container, Col, Row } from "react-bootstrap";
 function QuiSommes() {
     return (
         <Container>
-            <Row className="justify-content-center mt-5">
-                <Col className='text-center mt-5'>
-                    <h1 className="titles mt-5">QUI SOMMES-NOUS</h1>
+            <Row className="justify-content-center">
+                <Col className='text-center '>
+                    <h1 className="titles ">QUI SOMMES-NOUS</h1>
                 </Col>
             </Row>
             <Row className="justify-content-center">

@@ -29,8 +29,8 @@ function NosClients() {
 
     return (
         <Container >
-            <Row className="justify-content-center mt-5">
-                <Col className='text-center mt-5'>
+            <Row className="justify-content-center ">
+                <Col className='text-center '>
                     <h1 className="titles mt-5">NOS CLIENTS</h1>
                 </Col>
             </Row>

@@ -9,6 +9,7 @@ import NosClients from "./Components/NosClients";
 import Showroom from "./Components/Showroom";
 import Faq from "./Components/Faq";
 import SocialMedia from "./Components/SocialMedia";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Showroom />
             <Faq />
             <SocialMedia />
+            <Footer />
         </>
     );
 }

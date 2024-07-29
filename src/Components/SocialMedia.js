@@ -3,13 +3,13 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 function SocialMedia() {
     return (
-        <Container>
+        <Container className="social-media">
             <Row className="justify-content-center">
                 <Col>
-                    <h1 className="titles text-center mt-5">Nos dernière nouveauté sur</h1>
+                    <h1 className="titles text-center ">Nos dernière nouveauté sur</h1>
                 </Col>
             </Row>
-            <Row className="mt-5 justify-content-center">
+            <Row className="mt-4 justify-content-center">
                 <Col >
                     <h5 className="text-center">Instagram</h5>
                     <Image alt="" href="" className="mx-auto d-block" src={(require("../images/insta.jpg"))} />

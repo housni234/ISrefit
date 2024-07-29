@@ -27,7 +27,7 @@ function Faq() {
                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="1">
+                <Accordion.Item eventKey="2">
                     <Accordion.Header>question #3</Accordion.Header>
                     <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

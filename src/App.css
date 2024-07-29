@@ -81,3 +81,40 @@
     border: none;
     box-shadow: 0px 2px 5px gray;
 }
+
+.footer {
+    background-color: rgb(201, 201, 201);
+    color: white;
+}
+
+/* font for footer */
+.contact-us {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.formulaire-title {
+    font-family: "verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.formulaire-sub-title {
+    font-family: "verdana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(114, 114, 114);
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.social-media {
+    margin-bottom: 150px;
+}

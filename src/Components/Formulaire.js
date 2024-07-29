@@ -47,7 +47,8 @@ function Formulaire() {
 
     return (
         <div>
-            <h2 className='d-flex justify-content-center p-4 mt-4'>Envoyez nous une demande de consultation</h2>
+            <h2 className='d-flex justify-content-center mt-5 formulaire-title'>Envoyez nous une demande de consultation</h2>
+            <h5 className="d-flex justify-content-center mb-4 formulaire-sub-title">Remplisesez le formulaire, et nous vous contacterons dans les 24 heures</h5>
 
             <Form action='http://localhost/mail.php' method='POST'>
                 <Container fluid>
@@ -61,7 +62,7 @@ function Formulaire() {
                         <Col className='pb-2'>
                             <Form.Control placeholder="Pays" name='Pays' />
                         </Col>
-                        <Col  className='pb-2'>
+                        <Col className='pb-2'>
                             <Form.Control placeholder="Vile" name='Vile' />
                         </Col>
                         {/* <Col className=''>
@@ -93,7 +94,7 @@ function Formulaire() {
                         <Col className='pb-2'>
                             <Form.Control placeholder="Telephone" name='Telephone' />
                         </Col>
-                       
+
                         {/* <Col className='p-0'>
                             <Form.Group as={Col} controlId="formGridState" >
                                 <Form.Select defaultValue="Choose...">
@@ -103,7 +104,7 @@ function Formulaire() {
                         </Col> */}
 
                         <Col >
-                            <Button variant="primary" type="submit" style={{ backgroundColor: "rgba(255, 188, 16, 1)", color: "black", border: "1px solid rgba(206, 206, 206, 1)" }}>
+                            <Button variant="primary" type="submit" style={{ backgroundColor: "rgba(255, 188, 16, 1)", color: "black", border: "1px solid rgba(186, 186, 186)", boxShadow: "2px 2px 4px gray" }}>
                                 Consulter
                             </Button>
                         </Col>

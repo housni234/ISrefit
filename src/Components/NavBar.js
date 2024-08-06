@@ -5,14 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import '../App.css';
 
-
-
-
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
     return (

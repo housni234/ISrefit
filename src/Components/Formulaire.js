@@ -46,7 +46,7 @@ function Formulaire() {
     // }, [selectedCountry]);
 
     return (
-        <div>
+        <div className="form mt-5">
             <h2 className='d-flex justify-content-center mt-5 formulaire-title'>Envoyez nous une demande de consultation</h2>
             <h5 className="d-flex justify-content-center mb-4 formulaire-sub-title">Remplisesez le formulaire, et nous vous contacterons dans les 24 heures</h5>
 

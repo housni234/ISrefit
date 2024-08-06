@@ -5,19 +5,30 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import '../App.css';
 
 
 
 
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
-            <Container fluid>
-                <Image className="logo" src={require("/Users/housni/Desktop/Projects/ISrefit/src/images/isRefit.jpeg")} />
+        <Container fluid className="bg-body-tertiary">
+            <Row className="align-items-center">
+                <Col xs="auto">
+                    <Image className="logo" src={require("/Users/housni/Desktop/Projects/ISrefit/src/images/isRefit.jpeg")} />
+                </Col>
+                <Col className="d-flex justify-content-center">
+                    <Image className="isRefit" src={require("/Users/housni/Desktop/Projects/ISrefit/src/images/IsRefit.jpg")} />
+                </Col>
+            </Row>
+            <Navbar expand="lg" className="bg-body-tertiary">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" className="bar">
-                    <Nav className="mx-auto mt-auto" >
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mx-auto">
                         <Row>
                             <Col md="auto">
                                 <Nav.Link href="#home" className="Navlink">NOS CUISINES</Nav.Link>
@@ -40,9 +51,13 @@ function NavBar() {
                         </Row>
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
-        </Navbar >
+            </Navbar>
+        </Container>
     );
 }
 
+
+
 export default NavBar;
+
+

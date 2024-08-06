@@ -50,6 +50,7 @@ function NosCuisines() {
                     </Col>
                 </Row>
             </Container>
+
         </>
     )
 

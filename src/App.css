@@ -129,6 +129,8 @@
     border-width: .2cqmax;
     border-radius: 1cqmin;
     box-shadow: 0px 2px 6px rgb(170, 170, 170);
+    margin: 8px;
+    padding: 4px;
 }
 
 /* App.css */

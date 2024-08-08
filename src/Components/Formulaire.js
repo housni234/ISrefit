@@ -92,7 +92,7 @@ function Formulaire() {
                             </Form.Group>
                         </Col>
                         <Col className='pb-2'>
-                            <Form.Control placeholder="Telephone" name='Telephone' />
+                            <Form.Control placeholder="(+212) 515980905" name='Telephone' />
                         </Col>
 
                         {/* <Col className='p-0'>

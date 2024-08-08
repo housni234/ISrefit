@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 function Showroom() {
     return (
         <Container>
-            <Row className=" justify-content-center">
+            {/* <Row className=" justify-content-center">
                 <Col>
                     <h1 className="titles mb-5 text-center">Visitez Notre Showroom</h1>
                 </Col>
@@ -18,7 +18,7 @@ function Showroom() {
                     <div>
                         <a href="">Zenkat Ibourk El Idrissi, Souabi, 22, Mabrooka, Casablanca</a></div>
                 </Col>
-            </Row>
+            </Row> */}
         </Container>
     )
 }

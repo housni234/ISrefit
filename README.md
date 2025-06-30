@@ -1,8 +1,6 @@
-IsRefit
+#ISrefit
 
+ISrefit is a responsive advertising website for a kitchen renovation company.
+It allows customers to browse renovation catalogs and request appointments directly through the site.
 
-Description
-
-IsRefit is a responsive an advertising website for kitchen renovation company.
-Through the website customers can check different catalogs  and apply for an appointment with the company.
-The website is built using Reactjs/Bootstarp/PHP/CSS.
+The website is built using React.js, Bootstrap, PHP, and CSS.

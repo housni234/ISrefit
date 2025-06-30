@@ -1,4 +1,4 @@
-#ISrefit
+ISrefit
 
 ISrefit is a responsive advertising website for a kitchen renovation company.
 It allows customers to browse renovation catalogs and request appointments directly through the site.
